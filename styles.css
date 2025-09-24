@@ -28,7 +28,7 @@ body {
 }
 
 .container {
-	max-width: 1100px;
+	max-width: 1200px;
 	margin: 0 auto;
 	padding: 0 20px;
 }
@@ -92,9 +92,23 @@ nav a {
     border-radius: 5px;
 }
 
-nav a:hover {
-    color: var(--bg-color);
-    background-color: var(--primary-color);
+nav a {
+	position: relative;
+}
+
+nav a::after {
+	content: "";
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 0;
+	height: 2px;
+	background: var(--primary-color);
+	transition: width 0.3s;
+}
+
+nav a:hover::after {
+	width: 100%;
 }
 
 #lang-toggle {

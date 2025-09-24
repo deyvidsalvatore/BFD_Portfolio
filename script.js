@@ -28,4 +28,39 @@ document.addEventListener("DOMContentLoaded", () => {
 	});
 
 	/** END MOBILE MENU */
+
+	// --- LANGUAGE SWITCH ---
+	const langToggleBtn = document.getElementById("lang-toggle");
+	let currentLang = "pt";
+
+	const setLanguage = async (lang) => {
+		try {
+			const response = await fetch(`assets/data/${lang}.json`);
+			if (!response.ok) {
+				throw new Error("Network response was not ok");
+			}
+			const translations = await response.json();
+
+			const elements = document.querySelectorAll("[data-translate-key]");
+			elements.forEach((element) => {
+				const key = element.getAttribute("data-translate-key");
+				if (translations[key]) {
+					element.innerHTML = translations[key];
+				}
+			});
+
+			document.documentElement.lang = lang === "pt" ? "pt-BR" : "en";
+			langToggleBtn.textContent = lang === "pt" ? "EN" : "PT-BR";
+			currentLang = lang;
+		} catch (error) {
+			console.error("Failed to load translation:", error);
+		}
+	};
+
+	langToggleBtn.addEventListener("click", () => {
+		const newLang = currentLang === "pt" ? "en" : "pt";
+		setLanguage(newLang);
+	});
+
+	setLanguage(currentLang);
 });
