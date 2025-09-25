@@ -234,13 +234,67 @@ main > section {
     padding: 100px 0;
 }
 
-/* --- SEÇÃO SOBRE --- */
-#about p {
-    font-size: 1.1rem;
-    margin-bottom: 15px;
-    max-width: 800px;
+/* --- *SOBRE MIM' --- */
+
+.about-title {
+	text-align: center;
+}
+.about-grid {
+	display: flex;
+	flex-direction: column;
+	gap: 50px;
 }
 
+.about-item {
+	display: flex;
+	align-items: center;
+	gap: 40px;
+}
+
+.about-icon {
+	flex-shrink: 0;
+	width: 150px;
+	height: 150px;
+	background: linear-gradient(135deg, var(--primary-color) 0%, #333 100%);
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: 2px solid var(--primary-color);
+	box-shadow: 0 4px 18px rgba(255, 215, 0, 0.12);
+	transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.about-icon:hover {
+	transform: scale(1.08);
+	box-shadow: 0 8px 32px rgba(255, 215, 0, 0.25);
+}
+
+.about-icon svg {
+	font-size: 48px;
+	color: #fff;
+	text-shadow: 0 2px 8px var(--primary-color);
+	transition: color 0.3s;
+}
+
+.about-icon:hover i {
+	color: var(--primary-color);
+}
+
+.about-text h3 {
+	color: var(--primary-color);
+	font-size: 1.5rem;
+	margin-bottom: 10px;
+}
+
+.about-text p {
+	font-size: 1rem;
+	line-height: 1.7;
+}
+
+.about-item:nth-child(2) {
+	flex-direction: row-reverse;
+}
 
 
 /* --- Media Query para telas menores (tablets e celulares) --- */
@@ -323,4 +377,19 @@ main > section {
 			padding: 12px 22px;
 			font-size: 1rem;
 		}
+
+		.about-item, .about-item:nth-child(2) {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-icon {
+        width: 120px;
+        height: 120px;
+        margin-bottom: 10px;
+    }
+
+    .about-icon i {
+        font-size: 3rem;
+    }
 }
