@@ -29,6 +29,24 @@ document.addEventListener("DOMContentLoaded", () => {
 
 	/** END MOBILE MENU */
 
+	// --- LÓGICA PARA ANIMAÇÃO AO ROLAR A PÁGINA ---
+	const revealElements = document.querySelectorAll(".reveal");
+
+	const revealOnScroll = () => {
+		const windowHeight = window.innerHeight;
+		for (let i = 0; i < revealElements.length; i++) {
+			const elementTop = revealElements[i].getBoundingClientRect().top;
+			const elementVisible = 150;
+
+			if (elementTop < windowHeight - elementVisible) {
+				revealElements[i].classList.add("visible");
+			}
+		}
+	};
+
+	window.addEventListener("scroll", revealOnScroll);
+	revealOnScroll();
+	
 	// --- LANGUAGE SWITCH ---
 	const langToggleBtn = document.getElementById("lang-toggle");
 	let currentLang = "pt";
