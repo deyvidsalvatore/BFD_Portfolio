@@ -145,6 +145,104 @@ nav a:hover::after {
     gap: 25px;
 }
 
+/* --- SEÇÃO HERO --- */
+#hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+		justify-content: space-between;
+    text-align: left;
+}
+
+.hero-text .hero_title {
+    font-size: 1.2rem;
+    margin: 20px 0 30px;
+    max-width: 600px;
+}
+
+.hero_info {
+	font-size: 1.15rem;
+	color: var(--text-color);
+	margin-bottom: 30px;
+	max-width: 600px;
+	background: rgba(30, 30, 30, 0.7);
+	padding: 18px 24px;
+	border-left: 4px solid var(--primary-color);
+	border-radius: 0 8px 8px 0;
+	box-shadow: 0 2px 12px rgba(18, 18, 18, 0.12);
+	font-style: italic;
+	letter-spacing: 0.01em;
+}
+
+.cta-button {
+    background-color: var(--primary-color);
+    color: var(--bg-color);
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.cta-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 15px rgba(255, 215, 0, 0.2);
+}
+
+.hero-img {
+	width: 350px;
+	height: 350px;
+	border-radius: 50%;
+	overflow: hidden;
+	box-shadow: 0 8px 32px rgba(255, 215, 0, 0.15), 0 2px 8px rgba(0,0,0,0.25);
+	margin-right: 50px;
+	background: linear-gradient(135deg, #ffd700 0%, #1e1e1e 100%);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	animation: pulse-border 1.5s infinite;
+}
+
+.hero-img img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: top;
+	border-radius: 50%;
+	border: 4px solid var(--primary-color);
+	transition: transform 0.3s;
+}
+
+@keyframes pulse-border {
+	0% {
+		border-width: 4px;
+		box-shadow: 0 0 0 0 var(--primary-color);
+	}
+	50% {
+		border-width: 8px;
+		box-shadow: 0 0 16px 4px var(--primary-color);
+	}
+	100% {
+		border-width: 4px;
+		box-shadow: 0 0 0 0 var(--primary-color);
+	}
+}
+
+
+/* --- SEÇÕES GERAIS --- */
+main > section {
+    padding: 100px 0;
+}
+
+/* --- SEÇÃO SOBRE --- */
+#about p {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+    max-width: 800px;
+}
+
+
+
 /* --- Media Query para telas menores (tablets e celulares) --- */
 @media screen and (max-width: 900px) {
     h1 { font-size: 2.8rem; }
@@ -192,4 +290,37 @@ nav a:hover::after {
     .timeline-dot {
         left: 3px;
     }
+
+		#hero {
+			flex-direction: column-reverse;
+			justify-content: center;
+			text-align: center;
+			gap: 30px;
+			padding-top: 80px;
+		}
+
+		.hero-img {
+			width: 180px;
+			height: 180px;
+			margin: 0 auto 25px auto;
+		}
+
+		.hero-text .hero_title {
+			font-size: 1rem;
+			margin: 15px 0 20px;
+			max-width: 95vw;
+		}
+
+		.hero_info {
+			font-size: 1rem;
+			max-width: 95vw;
+			padding: 12px 14px;
+			border-radius: 8px;
+			border-left: 3px solid var(--primary-color);
+		}
+
+		.cta-button {
+			padding: 12px 22px;
+			font-size: 1rem;
+		}
 }
