@@ -34,7 +34,17 @@
 	"edu1_title": "Pós-graduação, Engenharia de Software",
 	"edu2_title": "Bacharelado, Ciência da Computação",
 	"edu3_title": "Curso Técnico, Auxiliar de Redator de Textos Técnicos",
+	"edu1_period": "Descomplica (fevereiro de 2024 - agosto de 2024)",
+  "edu2_period": "UNIFG (janeiro de 2020 - dezembro de 2023)",
+  "edu3_period": "SENAI Caruaru (dezembro de 2023 - janeiro de 2024)",
 	"contact_title": "Contato",
 	"contact_subtitle": "Vamos nos conectar e construir algo incrível juntos!",
+	"contact_form_name_label": "Nome",
+  "contact_form_name_placeholder": "Digite seu nome completo",
+  "contact_form_email_label": "Email",
+  "contact_form_email_placeholder": "Digite seu melhor email",
+  "contact_form_message_label": "Mensagem",
+  "contact_form_message_placeholder": "Deixe sua mensagem aqui...",
+  "contact_form_send": "<i class='fa-solid fa-paper-plane'></i> Enviar Mensagem`",
 	"footer_text": "Todos os direitos reservados."
 }

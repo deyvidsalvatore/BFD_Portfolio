@@ -8,9 +8,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
 	hamburgerBtn.addEventListener("click", () => {
 		navWrapper.classList.toggle("active");
-		const icon = hamburgerBtn.querySelector("i");
+		const icon = hamburgerBtn.querySelector("svg");
 		icon.classList.toggle("fa-bars");
-		icon.classList.toggle("fa-times");
+		icon.classList.toggle("fa-xmark");
 	});
 
 	navLinks.forEach((link) => {
@@ -129,7 +129,7 @@ document.addEventListener("DOMContentLoaded", () => {
 			const response = await fetch(`assets/data/projects-${lang}.json`);
 			if (!response.ok) throw new Error("Arquivo de projetos não encontrado");
 			allProjects = await response.json();
-			currentPage = 1; 
+			currentPage = 1;
 			displayPage(currentPage);
 		} catch (error) {
 			console.error("Falha ao carregar os projetos:", error);
@@ -165,4 +165,87 @@ document.addEventListener("DOMContentLoaded", () => {
 	});
 
 	setLanguage(currentLang);
+
+	/**
+	 * LÓGICA PARA VALIDAÇÃO E ENVIO DO FORMULÁRIO DE CONTATO
+	 */
+	const contactForm = document.getElementById("contact-form");
+
+	contactForm.addEventListener("submit", async function (event) {
+		event.preventDefault();
+
+		const name = document.getElementById("name");
+		const email = document.getElementById("email");
+		const message = document.getElementById("message");
+		let isValid = true;
+
+		const showError = (input, errorMessage) => {
+			input.classList.add("invalid");
+			const errorP = input.nextElementSibling;
+			errorP.innerText = errorMessage;
+		};
+
+		const clearError = (input) => {
+			input.classList.remove("invalid");
+			const errorP = input.nextElementSibling;
+			errorP.innerText = "";
+		};
+
+		if (name.value.trim() === "") {
+			showError(name, "O campo nome é obrigatório.");
+			isValid = false;
+		} else {
+			clearError(name);
+		}
+
+		const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+		if (email.value.trim() === "") {
+			showError(email, "O campo email é obrigatório.");
+			isValid = false;
+		} else if (!emailRegex.test(email.value)) {
+			showError(email, "Por favor, insira um email válido.");
+			isValid = false;
+		} else {
+			clearError(email);
+		}
+
+		if (message.value.trim() === "") {
+			showError(message, "O campo mensagem é obrigatório.");
+			isValid = false;
+		} else {
+			clearError(message);
+		}
+
+		if (isValid) {
+			const formData = new FormData(contactForm);
+			const submitButton = contactForm.querySelector('button[type="submit"]');
+			const originalButtonText = submitButton.innerHTML;
+			submitButton.innerHTML = "Enviando...";
+			submitButton.disabled = true;
+
+			try {
+				const response = await fetch(contactForm.action, {
+					method: "POST",
+					body: formData,
+					headers: {
+						Accept: "application/json",
+					},
+				});
+
+				if (response.ok) {
+					alert("Mensagem enviada com sucesso! Obrigado pelo contato.");
+					contactForm.reset();
+				} else {
+					throw new Error("Falha no envio da mensagem.");
+				}
+			} catch (error) {
+				alert(
+					"Ocorreu um erro ao enviar a mensagem. Por favor, tente novamente mais tarde."
+				);
+			} finally {
+				submitButton.innerHTML = originalButtonText;
+				submitButton.disabled = false;
+			}
+		}
+	});
 });
