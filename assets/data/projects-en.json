@@ -1,0 +1,102 @@
+[
+	{
+		"id": 0,
+		"name": "Lojitas-Angular",
+		"pictures": [
+			"https://i.ibb.co/wdHZMtX/Captura-de-tela-de-2024-02-13-20-52-24.png"
+		],
+		"projectLink": "https://github.com/deyvidsalvatore/Lojitas-Angular",
+		"summary": "E-commerce mini project in Angular and Node.js as stripe back-end service",
+		"description": "Lojitas is a simple ecommerce to buy any product on the website, directly supported with stripe api",
+		"tags": ["HTML", "CSS", "ANGULAR", "TYPESCRIPT", "NODEJS"]
+	},
+	{
+		"id": 1,
+		"name": "Alura Geek",
+		"pictures": [
+			"https://raw.githubusercontent.com/deyvidsalvatore/challenger-alurageek-one/main/docs/print1.png",
+			"https://raw.githubusercontent.com/deyvidsalvatore/challenger-alurageek-one/main/docs/demonstracao1.gif"
+		],
+		"projectLink": "https://github.com/deyvidsalvatore/challenger-alurageek-one",
+		"summary": "A simple geek shopping using HTML, CSS and JS",
+		"description": "It was a challenger for a institution scholarship",
+		"tags": ["HTML", "CSS", "JAVASCRIPT", "NODEJS"]
+	},
+	{
+		"id": 2,
+		"name": "SportsStore",
+		"pictures": [
+			"https://i.ibb.co/S01B2r1/print1.png",
+			"https://i.ibb.co/DL68TSd/print2.png",
+			"https://i.ibb.co/j81BG8N/print3.png",
+			"https://i.ibb.co/qYD0Fcq/print4.png"
+		],
+		"projectLink": "https://github.com/deyvidsalvatore/SportsStore",
+		"summary": "SportStore is a simple store with CRUD Operations for Admin and the user can checkout",
+		"description": "SportsStore is an Angular App for study purposes to creation of an app containing a website for users and administration dashboard for admins",
+		"tags": ["HTML", "CSS", "NODEJS", "TYPESCRIPT", "ANGULAR"]
+	},
+	{
+		"id": 3,
+		"name": "Filmes-Score",
+		"pictures": ["https://i.ibb.co/25mG7Tb/Filme-Score-Thumb.jpg"],
+		"projectLink": "https://github.com/deyvidsalvatore/FilmeScore",
+		"summary": "Simple rating movie project with React and Spring Boot",
+		"description": "FilmesScore is a simple project where you can rate a movie and leave a star",
+		"tags": ["HTML", "CSS", "REACT", "TYPESCRIPT", "JAVA", "SPRINGBOOT"]
+	},
+	{
+		"id": 4,
+		"name": "Komodo Language",
+		"pictures": ["https://i.ibb.co/CHF26Mh/Linguagem-Komodo-thumb.png"],
+		"projectLink": "https://github.com/deyvidsalvatore/Linguagem-Komodo",
+		"summary": "Komodo is an OOP Approach custom Language, it was developed by an incredible team",
+		"description": "Komodo is a language developed using ASTNodes for an exam project using Java and ANTLR Framework",
+		"tags": ["JAVA", "ANTLR"]
+	},
+	{
+		"id": 5,
+		"name": "Formula Hindi Spring",
+		"pictures": ["https://i.ibb.co/X7WtDxS/formula-hindi-thumb.png"],
+		"projectLink": "https://github.com/deyvidsalvatore/Formula-Hindi-Spring",
+		"summary": "Formula Hindi Spring is a challenge project using Microservices and Spring Boot concepts learned.",
+		"description": "This project is a microservice application where you can simulate cars racing, and then give the summary of this race and write on the database using RabbitMQ communication",
+		"tags": ["JAVA", "SPRINGBOOT", "SPRINGCLOUD", "DOCKER"]
+	},
+	{
+		"id": 6,
+		"name": "Scholarship",
+		"pictures": ["https://i.ibb.co/HhHJ5rw/scholarship-thumb.png"],
+		"projectLink": "https://github.com/deyvidsalvatore/Scholarship-Spring",
+		"summary": "Scholarship is a Back-end focused on a School with its classes",
+		"description": "Scholarship deals with a class with students, 1 coordinator, 1 scrum master and many instructors with several rules on application negotiation",
+		"tags": ["JAVA", "SPRINGBOOT", "DOCKER"]
+	},
+	{
+		"id": 7,
+		"name": "Carritos-REST",
+		"pictures": ["https://i.ibb.co/r0xYXBF/carritos-thumb.png"],
+		"projectLink": "https://github.com/deyvidsalvatore/Carritos-REST",
+		"summary": "Carritos is a simple project to get one car and post one car, completely for study purposes only",
+		"description": "Carritos has two endpoints: one to get a car, and one to post a car, and counts with Docker Compose to run the application",
+		"tags": ["JAVA", "SPRINGBOOT", "DOCKER"]
+	},
+	{
+		"id": 8,
+		"name": "AcademiaFitSys",
+		"pictures": ["https://i.ibb.co/pPP07CX/academia-fit-sys-thumb.png"],
+		"projectLink": "https://github.com/deyvid-santos/AcademiaFitSysCCO4",
+		"summary": "AcademiaFitSys is a gym app where you can manage customers, instructors and prices",
+		"description": "AcademiaFitSys is a website with administration managing everything: logo, photos, misc, customers, instructors and payments. Focusing on a product for managing it",
+		"tags": ["HTML", "CSS", "JAVASCRIPT", "PYTHON", "DJANGO"]
+	},
+	{
+		"id": 9,
+		"name": "Minecraft JS",
+		"pictures": ["https://i.ibb.co/3vWLwjB/minecraft-js-thumb.png"],
+		"projectLink": "https://github.com/deyvidsalvatore/minecraft_js",
+		"summary": "Minecraft JS is just a simple game remade on JS based on the original one for study purposes only using React and Three.js",
+		"description": "Minecraft JS has a simple gameplay where you can only move, place blocks and destroy them.",
+		"tags": ["HTML", "CSS", "JAVASCRIPT", "REACT"]
+	}
+]

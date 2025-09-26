@@ -30,7 +30,6 @@ body {
 .container {
 	max-width: 1200px;
 	margin: 0 auto;
-	padding: 0 20px;
 }
 
 h1,
@@ -317,7 +316,7 @@ nav a:hover::after {
 }
 
 #skills p {
-	font-size: 1.25rem;
+	font-size: 1rem;
 }
 
 .skill-card {
@@ -399,6 +398,144 @@ nav a:hover::after {
 .timeline-content .date { font-style: italic; color: #aaa; margin-bottom: 10px; }
 .timeline-content .description { font-size: 1rem; }
 
+/* --- SEÇÃO DE PROJETOS --- */
+#projects h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+#projects > p {
+	text-align: center;
+	margin: 0 auto 40px auto;
+	font-size: 1rem;
+}
+
+.projects-grid {
+  display: grid;
+	grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.project-card {
+  background-color: var(--card-bg-color);
+  border-radius: 12px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--border-color);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.project-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.project-content {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.project-content h3 {
+  font-size: 1.4rem;
+  color: var(--primary-color);
+  margin-bottom: 10px;
+}
+
+.project-content .summary {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin-bottom: 15px;
+  flex-grow: 1;
+}
+
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.project-tags .tag {
+  background-color: rgba(255, 215, 0, 0.1);
+  color: var(--primary-color);
+  padding: 4px 10px;
+  border-radius: 15px;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.project-links {
+  display: flex;
+  gap: 15px;
+  margin-top: auto;
+}
+
+.project-links a {
+  background-color: var(--primary-color);
+  color: var(--bg-color);
+  padding: 8px 15px;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: background-color 0.3s;
+}
+
+.project-links a:hover {
+  background-color: #ffe033;
+}
+
+/* --- ESTILOS DA PAGINAÇÃO --- */
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin: 40px 0;
+  flex-wrap: wrap;
+}
+
+.pagination button {
+  background-color: var(--card-bg-color);
+  border: 1px solid var(--border-color);
+  color: var(--text-color);
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.pagination button:hover:not(:disabled) {
+  background-color: var(--primary-color);
+  color: var(--bg-color);
+  border-color: var(--primary-color);
+}
+
+.pagination button.active {
+  background-color: var(--primary-color);
+  color: var(--bg-color);
+  border-color: var(--primary-color);
+}
+
+.pagination button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
 /* --- ANIMAÇÃO DE SCROLL --- */
 .reveal {
     opacity: 0;
@@ -469,6 +606,7 @@ nav a:hover::after {
 	}
 
 	#hero {
+		margin-left: 2.5%;
 		flex-direction: column-reverse;
 		justify-content: center;
 		text-align: center;
@@ -536,11 +674,12 @@ nav a:hover::after {
 		font-size: 0.95rem;
 	}
 
-	#skills h2 {
-		font-size: 1.3rem;
-	}
-
 	#skills {
 		margin-top: 1rem;
 	}
+
+	 .projects-grid {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
 }
