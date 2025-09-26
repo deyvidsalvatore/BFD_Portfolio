@@ -1,0 +1,102 @@
+[
+	{
+		"id": 0,
+		"name": "Lojitas-Angular",
+		"pictures": [
+			"https://i.ibb.co/wdHZMtX/Captura-de-tela-de-2024-02-13-20-52-24.png"
+		],
+		"projectLink": "https://github.com/deyvidsalvatore/Lojitas-Angular",
+		"summary": "Mini projeto de E-commerce em Angular com Node.js como serviço de back-end para o Stripe",
+		"description": "Lojitas é um e-commerce simples para comprar qualquer produto no site, com suporte direto da API do Stripe",
+		"tags": ["HTML", "CSS", "ANGULAR", "TYPESCRIPT", "NODEJS"]
+	},
+	{
+		"id": 1,
+		"name": "Alura Geek",
+		"pictures": [
+			"https://raw.githubusercontent.com/deyvidsalvatore/challenger-alurageek-one/main/docs/print1.png",
+			"https://raw.githubusercontent.com/deyvidsalvatore/challenger-alurageek-one/main/docs/demonstracao1.gif"
+		],
+		"projectLink": "https://github.com/deyvidsalvatore/challenger-alurageek-one",
+		"summary": "Uma loja geek simples usando HTML, CSS e JS",
+		"description": "Foi um desafio para uma bolsa de estudos de uma instituição",
+		"tags": ["HTML", "CSS", "JAVASCRIPT", "NODEJS"]
+	},
+	{
+		"id": 2,
+		"name": "SportsStore",
+		"pictures": [
+			"https://i.ibb.co/S01B2r1/print1.png",
+			"https://i.ibb.co/DL68TSd/print2.png",
+			"https://i.ibb.co/j81BG8N/print3.png",
+			"https://i.ibb.co/qYD0Fcq/print4.png"
+		],
+		"projectLink": "https://github.com/deyvidsalvatore/SportsStore",
+		"summary": "SportStore é uma loja simples com operações CRUD para Admin e o usuário pode finalizar a compra",
+		"description": "SportsStore é um aplicativo Angular para fins de estudo para a criação de um app contendo um site para usuários e um painel de administração para administradores",
+		"tags": ["HTML", "CSS", "NODEJS", "TYPESCRIPT", "ANGULAR"]
+	},
+	{
+		"id": 3,
+		"name": "Filmes-Score",
+		"pictures": ["https://i.ibb.co/25mG7Tb/Filme-Score-Thumb.jpg"],
+		"projectLink": "https://github.com/deyvidsalvatore/FilmeScore",
+		"summary": "Projeto simples de avaliação de filmes com React e Spring Boot",
+		"description": "FilmesScore é um projeto simples onde você pode avaliar um filme e deixar uma estrela",
+		"tags": ["HTML", "CSS", "REACT", "TYPESCRIPT", "JAVA", "SPRINGBOOT"]
+	},
+	{
+		"id": 4,
+		"name": "Linguagem Komodo",
+		"pictures": ["https://i.ibb.co/CHF26Mh/Linguagem-Komodo-thumb.png"],
+		"projectLink": "https://github.com/deyvidsalvatore/Linguagem-Komodo",
+		"summary": "Komodo é uma linguagem personalizada com abordagem POO, desenvolvida por uma equipe incrível",
+		"description": "Komodo é uma linguagem desenvolvida usando ASTNodes para um projeto de avaliação, utilizando Java e o Framework ANTLR",
+		"tags": ["JAVA", "ANTLR"]
+	},
+	{
+		"id": 5,
+		"name": "Formula Hindi Spring",
+		"pictures": ["https://i.ibb.co/X7WtDxS/formula-hindi-thumb.png"],
+		"projectLink": "https://github.com/deyvidsalvatore/Formula-Hindi-Spring",
+		"summary": "Formula Hindi Spring é um projeto de desafio utilizando conceitos aprendidos de Microsserviços e Spring Boot.",
+		"description": "Este projeto é uma aplicação de microsserviços onde você pode simular corridas de carros e, em seguida, obter o resumo da corrida e gravá-lo no banco de dados usando comunicação com RabbitMQ",
+		"tags": ["JAVA", "SPRINGBOOT", "SPRINGCLOUD", "DOCKER"]
+	},
+	{
+		"id": 6,
+		"name": "Scholarship (Bolsa de Estudos)",
+		"pictures": ["https://i.ibb.co/HhHJ5rw/scholarship-thumb.png"],
+		"projectLink": "https://github.com/deyvidsalvatore/Scholarship-Spring",
+		"summary": "Scholarship é um Back-end focado em uma Escola com suas turmas",
+		"description": "Scholarship lida com uma turma com alunos, 1 coordenador, 1 scrum master e muitos instrutores, com várias regras na negociação da aplicação",
+		"tags": ["JAVA", "SPRINGBOOT", "DOCKER"]
+	},
+	{
+		"id": 7,
+		"name": "Carritos-REST",
+		"pictures": ["https://i.ibb.co/r0xYXBF/carritos-thumb.png"],
+		"projectLink": "https://github.com/deyvidsalvatore/Carritos-REST",
+		"summary": "Carritos é um projeto simples para obter e postar um carro, apenas para fins de estudo",
+		"description": "Carritos possui dois endpoints: um para obter um carro e outro para postar um carro, e conta com o Docker Compose para executar a aplicação",
+		"tags": ["JAVA", "SPRINGBOOT", "DOCKER"]
+	},
+	{
+		"id": 8,
+		"name": "AcademiaFitSys",
+		"pictures": ["https://i.ibb.co/pPP07CX/academia-fit-sys-thumb.png"],
+		"projectLink": "https://github.com/deyvid-santos/AcademiaFitSysCCO4",
+		"summary": "AcademiaFitSys é um aplicativo de academia onde você pode gerenciar clientes, instrutores e preços",
+		"description": "AcademiaFitSys é um site com administração que gerencia tudo: logo, fotos, diversos, clientes, instrutores e pagamentos. Focado em ser um produto para gerenciamento",
+		"tags": ["HTML", "CSS", "JAVASCRIPT", "PYTHON", "DJANGO"]
+	},
+	{
+		"id": 9,
+		"name": "Minecraft JS",
+		"pictures": ["https://i.ibb.co/3vWLwjB/minecraft-js-thumb.png"],
+		"projectLink": "https://github.com/deyvidsalvatore/minecraft_js",
+		"summary": "Minecraft JS é um jogo simples recriado em JS, baseado no original, apenas para fins de estudo, usando React e Three.js",
+		"description": "Minecraft JS tem uma jogabilidade simples onde você só pode se mover, colocar blocos e destruí-los.",
+		"tags": ["HTML", "CSS", "JAVASCRIPT", "REACT"]
+	}
+]

@@ -1,15 +1,480 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>Portfólio - Deyvid Santos</title>
-	<link rel="stylesheet" href="styles.css" title="Portfolio Styles" />
-	<link rel="stylesheet" href="assets/libs/font-awesome.all.min.css" title="FontAwesome 6 Icons Library" />
-</head>
-<body>
-	<h1>Hello World</h1>
-	<script src="script.js"></script>
-</body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>Portfólio - Deyvid Santos</title>
+		<link rel="stylesheet" href="styles.css" title="Portfolio Styles" />
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+		<link rel="icon" type="image/x-icon" href="/favicon.ico" />
+		<link
+			rel="stylesheet"
+			href="assets/libs/font-awesome.all.min.css"
+			title="FontAwesome 7 Icons Library"
+		/>
+		<script src="assets/libs/font-awesome.all.min.js"></script>
+	</head>
+	<body>
+		<header>
+			<menu class="container header-content">
+				<section class="logo">
+					<a href="#">
+						<span>&lt;Deyvid Santos /&gt;</span>
+					</a>
+				</section>
+				<section class="nav-wrapper">
+					<nav>
+						<ul>
+							<li><a href="#about" data-translate-key="nav_about">Sobre</a></li>
+							<li>
+								<a href="#skills" data-translate-key="nav_skills"
+									>Competências</a
+								>
+							</li>
+							<li>
+								<a href="#experience" data-translate-key="nav_experience"
+									>Experiência</a
+								>
+							</li>
+							<li>
+								<a href="#projects" data-translate-key="nav_projects"
+									>Projetos</a
+								>
+							</li>
+							<li>
+								<a href="#education" data-translate-key="nav_education"
+									>Formação</a
+								>
+							</li>
+							<li>
+								<a href="#contact" data-translate-key="nav_contact">Contato</a>
+							</li>
+						</ul>
+					</nav>
+					<button id="lang-toggle"><i class="fa-solid fa-globe"></i> EN</button>
+				</section>
+
+				<button class="hamburger">
+					<i class="fa-solid fa-bars"></i>
+				</button>
+			</menu>
+		</header>
+
+		<main class="main">
+			<section id="hero" class="container reveal">
+				<div class="hero-text">
+					<h1 data-translate-key="hero_name">Olá, Sou Deyvid Santos</h1>
+					<p class="hero_title" data-translate-key="hero_title">
+						Web Developer | Java, AWS, & Angular Expert | 2x AWS Certified
+					</p>
+					<p class="hero_info" data-translate-key="hero_info">
+						Desenvolvedor Fullstack especializado em Java, Angular e Cloud,
+						dedicado à criação de soluções inovadoras e escaláveis para
+						impulsionar negócios. Comprometido com a aprendizagem contínua de
+						novas tecnologias.
+					</p>
+					<a href="#contact" class="cta-button" data-translate-key="hero_cta"
+						>Entre em Contato <i class="fa-solid fa-arrow-right"></i
+					></a>
+				</div>
+				<div class="hero-img">
+					<img src="assets/img/_profile.jpeg" alt="Foto de Deyvid Santos" />
+				</div>
+			</section>
+
+			<section id="about" class="container reveal">
+				<h2 class="about-title">
+					<span data-translate-key="about_title">Sobre Mim</span>
+				</h2>
+
+				<div class="about-grid">
+					<div class="about-item">
+						<div class="about-icon">
+							<i class="fa-solid fa-rocket"></i>
+						</div>
+						<div class="about-text">
+							<h3 data-translate-key="about_h3_1">Soluções Inovadoras</h3>
+							<p data-translate-key="about_p1">
+								[cite_start]Desenvolvedor de software apaixonado pela construção
+								de soluções inovadoras e escaláveis[cite: 20]. [cite_start]Tenho
+								grande interesse em aproveitar tecnologias como Java, Spring
+								Boot, Angular e Microsoft SQL Server para criar aplicações que
+								resolvem problemas do mundo real[cite: 21].
+							</p>
+						</div>
+					</div>
+
+					<div class="about-item">
+						<div class="about-icon">
+							<i class="fa-solid fa-users"></i>
+						</div>
+						<div class="about-text">
+							<h3 data-translate-key="about_h3_2">Colaboração e Eficiência</h3>
+							<p data-translate-key="about_p2">
+								[cite_start]Gosto de trabalhar com equipes multifuncionais para
+								integrar sistemas complexos, garantindo interações perfeitas
+								entre front-end e back-end[cite: 23]. [cite_start]Seja
+								colaborando com colegas usando Git e GitHub ou otimizando fluxos
+								de trabalho, sou motivado a tornar os processos mais eficientes
+								e escaláveis[cite: 24].
+							</p>
+						</div>
+					</div>
+
+					<div class="about-item">
+						<div class="about-icon">
+							<i class="fa-solid fa-cogs"></i>
+						</div>
+						<div class="about-text">
+							<h3 data-translate-key="about_h3_3">Crescimento e DevOps</h3>
+							<p data-translate-key="about_p3">
+								[cite_start]Acredito na criação de ambientes onde a colaboração
+								e a inovação estão em primeiro plano[cite: 26].
+								[cite_start]Também sou apaixonado por expandir minha experiência
+								em DevOps para ajudar empresas a construir infraestruturas
+								resilientes e de alto desempenho que apoiam a melhoria
+								contínua[cite: 27].
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section id="skills" class="container reveal">
+				<h2 data-translate-key="skills_title">
+					<i class="fa-solid fa-code"></i> Principais Competências
+				</h2>
+				<p data-translate-key="skills_description" align="center">
+					Confira abaixo minhas principais competências técnicas, que abrangem
+					backend, frontend, cloud, DevOps, testes e design.
+				</p>
+				<div class="skills-grid">
+					<article class="skill-card">
+						<i class="fa-brands fa-java"></i><span>Java</span>
+					</article>
+					<article class="skill-card">
+						<i class="fa-solid fa-leaf"></i><span>Spring Boot</span>
+					</article>
+					<article class="skill-card">
+						<i class="fa-brands fa-angular"></i><span>Angular</span>
+					</article>
+					<article class="skill-card">
+						<i class="fa-brands fa-aws"></i><span>AWS</span>
+					</article>
+					<article class="skill-card">
+						<i class="fa-solid fa-infinity"></i><span>DevOps</span>
+					</article>
+					<article class="skill-card">
+						<i class="fa-solid fa-database"></i><span>SQL Server</span>
+					</article>
+					<article class="skill-card">
+						<i class="fa-brands fa-github"></i><span>Git & GitHub</span>
+					</article>
+					<article class="skill-card">
+						<i class="fa-solid fa-check-double"></i><span>Cypress</span>
+					</article>
+					<article class="skill-card">
+						<i class="fa-solid fa-flask-vial"></i><span>Jest</span>
+					</article>
+					<article class="skill-card">
+						<i class="fa-brands fa-figma"></i><span>Figma</span>
+					</article>
+					<article class="skill-card">
+						<i class="fa-brands fa-react"></i><span>React</span>
+					</article>
+					<article class="skill-card">
+						<i class="fa-brands fa-sass"></i><span>SASS</span>
+					</article>
+				</div>
+			</section>
+
+			<section id="experience" class="container reveal">
+				<h2 data-translate-key="experience_title">
+					<i class="fa-solid fa-briefcase"></i> Experiência
+				</h2>
+				<div class="timeline">
+					<div class="timeline-item">
+						<div class="timeline-dot"></div>
+						<div class="timeline-content">
+							<h3 data-translate-key="exp1_title">Digital IT Teacher</h3>
+							<p class="company">YouTube</p>
+							<p class="date" data-translate-key="exp1_date">
+								novembro de 2023 - Presente
+							</p>
+							<p class="description" data-translate-key="exp1_desc">
+								Criação de conteúdo educacional e tutoriais em vídeo sobre
+								desenvolvimento de software, abordando tecnologias como Java,
+								AWS e Angular.
+							</p>
+						</div>
+					</div>
+
+					<div class="timeline-item">
+						<div class="timeline-dot"></div>
+						<div class="timeline-content">
+							<h3 data-translate-key="exp2_title">Programador Trainee</h3>
+							<p class="company">Compass UOL</p>
+							<p class="date" data-translate-key="exp2_date">
+								setembro de 2024 - novembro de 2024
+							</p>
+							<p class="description" data-translate-key="exp2_desc">
+								Atuei em projetos como Shadow StepUp usando HTML, CSS,
+								JavaScript e Angular como desenvolvedor de interfaces para o
+								projeto proposto.
+							</p>
+						</div>
+					</div>
+
+					<div class="timeline-item">
+						<div class="timeline-dot"></div>
+						<div class="timeline-content">
+							<h3 data-translate-key="exp3_title">
+								Estagiário Back-end Journey (Spring Boot) - AWS Context
+							</h3>
+							<p class="company">Compass UOL</p>
+							<p class="date" data-translate-key="exp3_date">
+								junho de 2023 - novembro de 2023
+							</p>
+							<p class="description" data-translate-key="exp3_desc">
+								Desenvolvimento e manutenção de microserviços com Java e Spring
+								Boot em um ambiente focado em nuvem AWS.
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section id="projects" class="container reveal">
+				<h2 data-translate-key="projects_title">
+					<i class="fa-solid fa-laptop-code"></i> Projetos
+				</h2>
+				<p data-translate-key="projects_description">
+					Explore alguns dos projetos que desenvolvi, abrangendo desde
+					aplicações web completas até desafios de microsserviços e linguagens
+					de programação.
+				</p>
+				<div id="my-projects" class="projects-grid">
+					<article class="project-card">
+						<img
+							src="https://i.ibb.co/25mG7Tb/Filme-Score-Thumb.jpg"
+							alt="Imagem do projeto Filmes-Score"
+							class="project-image"
+						/>
+						<div class="project-content">
+							<h3>Filmes-Score</h3>
+							<p class="summary">
+								Projeto simples de avaliação de filmes com React e Spring Boot
+							</p>
+							<div class="project-tags">
+								<span class="tag">REACT</span>
+								<span class="tag">TYPESCRIPT</span>
+								<span class="tag">JAVA</span>
+								<span class="tag">SPRINGBOOT</span>
+							</div>
+							<div class="project-links">
+								<a
+									href="https://github.com/deyvidsalvatore/FilmeScore"
+									target="_blank"
+									rel="noopener noreferrer"
+								>
+									<i class="fa-brands fa-github"></i> Repositório
+								</a>
+							</div>
+						</div>
+					</article>
+
+					<article class="project-card">
+						<img
+							src="https://i.ibb.co/X7WtDxS/formula-hindi-thumb.png"
+							alt="Imagem do projeto Formula Hindi Spring"
+							class="project-image"
+						/>
+						<div class="project-content">
+							<h3>Formula Hindi Spring</h3>
+							<p class="summary">
+								Projeto de desafio utilizando conceitos de Microsserviços e
+								Spring Boot.
+							</p>
+							<div class="project-tags">
+								<span class="tag">JAVA</span>
+								<span class="tag">SPRINGBOOT</span>
+								<span class="tag">SPRINGCLOUD</span>
+								<span class="tag">DOCKER</span>
+							</div>
+							<div class="project-links">
+								<a
+									href="https://github.com/deyvidsalvatore/Formula-Hindi-Spring"
+									target="_blank"
+									rel="noopener noreferrer"
+								>
+									<i class="fa-brands fa-github"></i> Repositório
+								</a>
+							</div>
+						</div>
+					</article>
+				</div>
+				<div id="pagination-controls" class="pagination"></div>
+			</section>
+
+			<section id="education" class="container reveal">
+				<h2 data-translate-key="education_title">
+					<i class="fa-solid fa-graduation-cap"></i> Formação Acadêmica
+				</h2>
+				<div class="education-grid">
+					<div class="education-card">
+						<img
+							src="assets/img/descomplica.png"
+							alt="Logo Descomplica"
+							class="education-logo"
+						/>
+						<div class="education-info">
+							<h3 data-translate-key="edu1_title">
+								Pós-graduação, Engenharia de Software
+							</h3>
+							<p data-translate-key="edu1_period">
+								Descomplica (fevereiro de 2024 - agosto de 2024)
+							</p>
+						</div>
+					</div>
+
+					<div class="education-card">
+						<img
+							src="assets/img/unifg.png"
+							alt="Logo UNIFG"
+							class="education-logo"
+						/>
+						<div class="education-info">
+							<h3 data-translate-key="edu2_title">
+								Bacharelado, Ciência da Computação
+							</h3>
+							<p data-translate-key="edu2_period">
+								UNIFG (janeiro de 2020 - dezembro de 2023)
+							</p>
+						</div>
+					</div>
+
+					<div class="education-card">
+						<img
+							src="assets/img/senai.jpeg"
+							alt="Logo SENAI"
+							class="education-logo"
+						/>
+						<div class="education-info">
+							<h3 data-translate-key="edu3_title">
+								Curso Técnico, Auxiliar de Redator de Textos Técnicos
+							</h3>
+							<p data-translate-key="edu3_period">
+								SENAI Caruaru (dezembro de 2023 - janeiro de 2024)
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section id="contact" class="container reveal">
+				<h2 data-translate-key="contact_title">
+					<i class="fa-solid fa-paper-plane"></i> Contato
+				</h2>
+
+				<div class="contact-layout">
+					<div class="contact-info">
+						<img
+							src="assets/img/_profile.jpeg"
+							alt="Foto de Deyvid Santos"
+							class="contact-photo"
+						/>
+
+						<p data-translate-key="contact_subtitle">
+							Vamos nos conectar e construir algo incrível juntos!
+						</p>
+						<div class="contact-links">
+							<a href="mailto:deyvidsantosdasilva2002@gmail.com">
+								<i class="fa-solid fa-envelope"></i> Email
+							</a>
+							<a
+								href="https://www.linkedin.com/in/deyvidsantosdevops"
+								target="_blank"
+							>
+								<i class="fa-brands fa-linkedin"></i> LinkedIn
+							</a>
+							<a
+								href="https://medium.com/@deyvidsantos.salvatore"
+								target="_blank"
+							>
+								<i class="fa-brands fa-medium"></i> Blog (Medium)
+							</a>
+						</div>
+					</div>
+
+					<form
+						id="contact-form"
+						action="https://formspree.io/f/movkvzve"
+						method="POST"
+						class="contact-form"
+					>
+						<div class="form-group">
+							<label for="name" data-translate-key="contact_form_name_label"
+								>Nome</label
+							>
+							<input
+								type="text"
+								id="name"
+								name="name"
+								required
+								data-translate-key-placeholder="contact_form_name_placeholder"
+							/>
+							<p class="error-message"></p>
+						</div>
+						<div class="form-group">
+							<label for="email" data-translate-key="contact_form_email_label"
+								>Email</label
+							>
+							<input
+								type="email"
+								id="email"
+								name="email"
+								required
+								data-translate-key-placeholder="contact_form_email_placeholder"
+							/>
+							<p class="error-message"></p>
+						</div>
+						<div class="form-group">
+							<label
+								for="message"
+								data-translate-key="contact_form_message_label"
+								>Mensagem</label
+							>
+							<textarea
+								id="message"
+								name="message"
+								rows="5"
+								required
+								data-translate-key-placeholder="contact_form_message_placeholder"
+							></textarea>
+							<p class="error-message"></p>
+						</div>
+						<button
+							type="submit"
+							class="cta-button"
+							data-translate-key="contact_form_send"
+						>
+							<i class="fa-solid fa-paper-plane"></i>Enviar Mensagem
+						</button>
+					</form>
+				</div>
+			</section>
+		</main>
+		<footer>
+			<div class="container">
+				<p>
+					&copy; 2025 Deyvid Santos.
+					<span data-translate-key="footer_text"
+						>Todos os direitos reservados.</span
+					>
+				</p>
+			</div>
+		</footer>
+		<script src="script.js"></script>
+	</body>
 </html>
