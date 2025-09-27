@@ -296,12 +296,17 @@ nav a:hover::after {
 #hero,
 #about,
 #skills,
-#experience {
+#experience,
+#education {
 	margin-top: 2rem;
 
 	h2 {
 		text-align: center;
 	}
+}
+
+#education {
+	margin-bottom: 3.5rem;
 }
 .skills-grid {
 	display: grid;
@@ -750,13 +755,14 @@ footer {
 /* --- ANIMAÇÃO DE SCROLL --- */
 .reveal {
 	opacity: 0;
-	transform: translateY(50px);
 	transition: opacity 0.8s, transform 0.8s;
+	will-change: opacity, transform;
+	position: relative;
 }
 
 .reveal.visible {
 	opacity: 1;
-	transform: translateY(0);
+	transform: none;
 }
 
 /* --- Media Query para telas menores (tablets e celulares) --- */

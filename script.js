@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
 			if (navWrapper.classList.contains("active")) {
 				navWrapper.classList.remove("active");
 				const icon = hamburgerBtn.querySelector("i");
-				icon.classList.remove("fa-times");
+				icon.classList.remove("fa-xmark");
 				icon.classList.add("fa-bars");
 			}
 		});
