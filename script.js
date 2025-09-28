@@ -1,5 +1,17 @@
 document.addEventListener("DOMContentLoaded", () => {
 	/**
+	 * LÓGICA PARA REDIRECIONAR ROTAS INEXISTENTES (SPA)
+	 */
+	(function handleSPARouting() {
+		const path = window.location.pathname;
+		const isRoot = path === "/" || path.endsWith("/index.html");
+		if (!isRoot && !window.location.hash) {
+			console.warn(`Redirecionando da rota inexistente "${path}" para a raiz.`);
+			window.location.href = "/";
+		}
+	})();
+	
+	/**
 	 * LÓGICA PARA O MENU HAMBÚRGUER (MOBILE)
 	 */
 	const hamburgerBtn = document.querySelector(".hamburger");
