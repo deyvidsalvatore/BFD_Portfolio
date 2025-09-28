@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
 			if (navWrapper.classList.contains("active")) {
 				navWrapper.classList.remove("active");
 				const icon = hamburgerBtn.querySelector("i");
-				icon.classList.remove("fa-times");
+				icon.classList.remove("fa-xmark");
 				icon.classList.add("fa-bars");
 			}
 		});
@@ -247,5 +247,35 @@ document.addEventListener("DOMContentLoaded", () => {
 				submitButton.disabled = false;
 			}
 		}
+	});
+
+	/** LÓGICA PARA TROCA DE TEMA */
+	const themeToggleBtn = document.getElementById("theme-toggle");
+
+	const setTheme = (theme) => {
+		const themeIcon = themeToggleBtn.querySelector("i, svg");
+		document.body.setAttribute("data-theme", theme);
+		localStorage.setItem("theme", theme);
+
+		if (theme === "dark") {
+			themeIcon.classList.remove("fa-moon");
+			themeIcon.classList.add("fa-sun");
+		} else {
+			themeIcon.classList.remove("fa-sun");
+			themeIcon.classList.add("fa-moon");
+		}
+	};
+
+	const systemPrefersDark = window.matchMedia(
+		"(prefers-color-scheme: dark)"
+	).matches;
+	const savedTheme = localStorage.getItem("theme");
+
+	const initialTheme = savedTheme || (systemPrefersDark ? "dark" : "light");
+	setTheme(initialTheme);
+
+	themeToggleBtn.addEventListener("click", () => {
+		const currentTheme = document.body.getAttribute("data-theme");
+		setTheme(currentTheme === "dark" ? "light" : "dark");
 	});
 });
